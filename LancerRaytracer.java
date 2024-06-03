@@ -47,10 +47,12 @@ public class LancerRaytracer {
         Instant debut = Instant.now();
         System.out.println("Calcul de l'image :\n - Coordonnées : "+x0+","+y0
                            +"\n - Taille "+ largeur + "x" + hauteur);
-        Image image = scene.compute(x0, y0, l, h);
-        //Question3
-        Image image1 = scene.compute(x0, y0, l/2, h/2);
-        Image image4 = scene.compute(x0+l/2, y0+h/2, l/2, h/2);
+        
+        // Image image = scene.compute(x0, y0, l, h);
+        
+        // Question 3
+        Image hautGauche = scene.compute(x0, y0, l/2, h/2);
+        Image basDroit = scene.compute(x0+l/2, y0+h/2, l/2, h/2);
 
         Instant fin = Instant.now();
 
@@ -59,7 +61,10 @@ public class LancerRaytracer {
         System.out.println("Image calculée en :"+duree+" ms");
         
         // Affichage de l'image calculée
-        disp.setImage(image1, x0, y0);
-        disp.setImage(image4, x0+l/2, y0+h/2);
+        // disp.setImage(image, x0, y0);
+        
+        // Question 3
+        disp.setImage(hautGauche, x0, y0);
+        disp.setImage(basDroit, x0+l/2, y0+h/2);
     }	
 }
