@@ -1,9 +1,5 @@
 # TP Noté - Calculs parallèles
 
-Created: 3 juin 2024 14:26
-Type: Compte Rendu
-Reviewed: No
-
 > CHAIX Maxence, MARI Farid, ROTH Tristan, BOURDON Marin — AIL2
 > 
 
@@ -43,7 +39,7 @@ Nous avons mesuré le temps de calcul sur un MacBook Air équipé d’un process
 | 7500 | 215097 |
 | 10000 | 377029 |
 
-![Durée de calcul (en ms) par rapport à Taille de l'image (en px).png](TP%20Note%CC%81%20-%20Calculs%20paralle%CC%80les%20dab5ac13c8bd4a9ea97c2644d48964e5/Duree_de_calcul_(en_ms)_par_rapport_a_Taille_de_limage_(en_px).png)
+![Durée de calcul (en ms) par rapport à Taille de l'image (en px).png](images/Durée%20de%20calcul%20(en%20ms)%20par%20rapport%20à%20Taille%20de%20l'image%20(en%20px).png)
 
 ### 3. En ne modifiant **que** le fichier *LancerRaytracer.java*, reproduire l'image suivante
 
@@ -71,7 +67,7 @@ disp.setImage(hautGauche, x0, y0);
 disp.setImage(basDroit, x0+l/2, y0+h/2);
 ```
 
-![Capture d’écran 2024-06-03 à 15.13.32.png](TP%20Note%CC%81%20-%20Calculs%20paralle%CC%80les%20dab5ac13c8bd4a9ea97c2644d48964e5/Capture_decran_2024-06-03_a_15.13.32.png)
+![Capture d’écran 2024-06-03 à 15.13.32.png](images/Capture%20d’écran%202024-06-03%20à%2015.13.32.png)
 
 # **Accélérons les choses**
 
@@ -81,7 +77,7 @@ disp.setImage(basDroit, x0+l/2, y0+h/2);
      1. Le/les processus fixes (ceux qui écoutent sur un port choisi) et les processus éphémères ? (ceux qui rentrent et sortent a leur guise) ?
      2. Les types de données échangées entre les processus
 
-![Schéma.png](TP%20Note%CC%81%20-%20Calculs%20paralle%CC%80les%20dab5ac13c8bd4a9ea97c2644d48964e5/Schema.png)
+![Schéma.png](images/Schéma.png)
 
 Le `Distributeur` est un processus fixe, tandis que les `Noeuds` sont des processus éphémères.
 
@@ -106,6 +102,8 @@ Pour vérifier que le calcul est bien accéléré, nous avons décidé de relev�
 | 9 | 900 |
 | 10 | 871 |
 
-![Durée de calcul (en ms) par rapport à Nombre de nœud.png](TP%20Note%CC%81%20-%20Calculs%20paralle%CC%80les%20dab5ac13c8bd4a9ea97c2644d48964e5/Duree_de_calcul_(en_ms)_par_rapport_a_Nombre_de_nud.png)
+![Durée de calcul (en ms) par rapport à Nombre de nœud.png](images/Durée%20de%20calcul%20(en%20ms)%20par%20rapport%20à%20Nombre%20de%20nœud.png)
 
 Nous pouvons voir que la durée de calcul réduit lorsque le nombre de nœud augmente, mais la durée commence à stagner lorsque l’on approche des 8 nœuds disponibles.
+
+https://github.com/tristan-roth/Projet_raytracing/assets/49779795/010afa37-2fbd-4eb0-a4d3-05642ff80ea0
