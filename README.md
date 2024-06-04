@@ -5,6 +5,10 @@
 
 Git : [https://github.com/tristan-roth/Projet_raytracing](https://github.com/tristan-roth/Projet_raytracing)
 
+## Notice d'utilisation
+
+Pour accéder à la notice d'utilisation : [`Utilisation`](Utilisation.md)
+
 # **Préambule**
 
 ## Questions :
